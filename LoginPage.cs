@@ -25,7 +25,8 @@ namespace Modern_Login
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MainDashboard MB = new MainDashboard();
+            MB.Show();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

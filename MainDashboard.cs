@@ -16,5 +16,10 @@ namespace Modern_Login
         {
             InitializeComponent();
         }
+
+        private void ExitDashboard_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
