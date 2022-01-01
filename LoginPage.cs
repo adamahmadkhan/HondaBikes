@@ -40,7 +40,7 @@ namespace Modern_Login
 
         private void label3_Click(object sender, EventArgs e)
         {
-            Process.Start("https://www.google.com/");
+            Process.Start("https://forms.gle/bwSXJzDppJ1btnyY9/");
         }
     }
 }

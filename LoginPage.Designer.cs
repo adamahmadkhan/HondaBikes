@@ -155,8 +155,10 @@ namespace Modern_Login
             // 
             // LoginButton
             // 
+            this.LoginButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LoginButton.BackgroundImage")));
+            this.LoginButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginButton.Location = new System.Drawing.Point(67, 356);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(134, 47);
@@ -170,7 +172,7 @@ namespace Modern_Login
             this.ExitLabel.AutoSize = true;
             this.ExitLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitLabel.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitLabel.Location = new System.Drawing.Point(98, 406);
+            this.ExitLabel.Location = new System.Drawing.Point(108, 406);
             this.ExitLabel.Name = "ExitLabel";
             this.ExitLabel.Size = new System.Drawing.Size(59, 27);
             this.ExitLabel.TabIndex = 8;
