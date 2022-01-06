@@ -29,7 +29,14 @@ namespace Modern_Login
 
         private void ContactUSBTN_Click_1(object sender, EventArgs e)
         {
+            aboutUS1.Hide();
             CN.Show();
+        }
+
+        private void AboutUSBTN_Click(object sender, EventArgs e)
+        {
+            CN.Hide();
+            aboutUS1.Show();
         }
     }
 }

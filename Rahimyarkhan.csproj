@@ -73,6 +73,12 @@
     <Compile Include="Contactus.Designer.cs">
       <DependentUpon>Contactus.cs</DependentUpon>
     </Compile>
+    <Compile Include="AboutUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutUS.Designer.cs">
+      <DependentUpon>AboutUS.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +96,9 @@
     </Compile>
     <EmbeddedResource Include="Contactus.resx">
       <DependentUpon>Contactus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutUS.resx">
+      <DependentUpon>AboutUS.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

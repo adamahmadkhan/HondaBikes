@@ -46,6 +46,7 @@ namespace Modern_Login
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.ExitDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.aboutUS1 = new Modern_Login.AboutUS();
             this.CN = new Modern_Login.Contactus();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
@@ -258,6 +259,7 @@ namespace Modern_Login
             this.AboutUSBTN.TabIndex = 4;
             this.AboutUSBTN.Text = "About US";
             this.AboutUSBTN.UseVisualStyleBackColor = false;
+            this.AboutUSBTN.Click += new System.EventHandler(this.AboutUSBTN_Click);
             // 
             // NewBikeBTN
             // 
@@ -321,6 +323,15 @@ namespace Modern_Login
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // aboutUS1
+            // 
+            this.aboutUS1.BackColor = System.Drawing.Color.White;
+            this.aboutUS1.Location = new System.Drawing.Point(185, 0);
+            this.aboutUS1.Name = "aboutUS1";
+            this.aboutUS1.Size = new System.Drawing.Size(902, 615);
+            this.aboutUS1.TabIndex = 2;
+            this.aboutUS1.Visible = false;
+            // 
             // CN
             // 
             this.CN.AutoScroll = true;
@@ -338,6 +349,7 @@ namespace Modern_Login
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1093, 615);
+            this.Controls.Add(this.aboutUS1);
             this.Controls.Add(this.CN);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -377,5 +389,6 @@ namespace Modern_Login
         private System.Windows.Forms.Button AboutUSBTN;
         private System.Windows.Forms.Button NewBikeBTN;
         private Contactus CN;
+        private AboutUS aboutUS1;
     }
 }
