@@ -10,26 +10,31 @@ using System.Windows.Forms;
 
 namespace Modern_Login
 {
-    public partial class MainDashboard : Form
+    public partial class Contactus : UserControl
     {
-        public MainDashboard()
+        public Contactus()
         {
             InitializeComponent();
         }
 
-        private void ExitDashboard_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
-        private void ContactUSBTN_Click(object sender, EventArgs e)
+        private void Contactus_Load(object sender, EventArgs e)
         {
-           
+
         }
 
-        private void ContactUSBTN_Click_1(object sender, EventArgs e)
+        private void label9_Click(object sender, EventArgs e)
         {
-            CN.Show();
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
