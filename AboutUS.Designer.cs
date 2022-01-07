@@ -52,7 +52,7 @@ namespace Modern_Login
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(644, 70);
+            this.label2.Location = new System.Drawing.Point(617, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 27);
             this.label2.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace Modern_Login
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(601, 100);
+            this.pictureBox1.Location = new System.Drawing.Point(581, 100);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(258, 272);
             this.pictureBox1.TabIndex = 2;

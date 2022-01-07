@@ -38,5 +38,18 @@ namespace Modern_Login
             CN.Hide();
             aboutUS1.Show();
         }
+
+        private void NewBikeBTN_Click(object sender, EventArgs e)
+        {
+            CN.Hide();
+            aboutUS1.Hide();
+            newbike1.Show();
+
+        }
+
+        private void newbike1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

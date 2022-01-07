@@ -46,6 +46,7 @@ namespace Modern_Login
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.ExitDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.newbike1 = new Modern_Login.Newbike();
             this.aboutUS1 = new Modern_Login.AboutUS();
             this.CN = new Modern_Login.Contactus();
             this.panel1.SuspendLayout();
@@ -277,6 +278,7 @@ namespace Modern_Login
             this.NewBikeBTN.TabIndex = 3;
             this.NewBikeBTN.Text = "New Bike";
             this.NewBikeBTN.UseVisualStyleBackColor = false;
+            this.NewBikeBTN.Click += new System.EventHandler(this.NewBikeBTN_Click);
             // 
             // iconPictureBox1
             // 
@@ -323,6 +325,15 @@ namespace Modern_Login
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // newbike1
+            // 
+            this.newbike1.Location = new System.Drawing.Point(185, 0);
+            this.newbike1.Name = "newbike1";
+            this.newbike1.Size = new System.Drawing.Size(908, 615);
+            this.newbike1.TabIndex = 3;
+            this.newbike1.Visible = false;
+            this.newbike1.Load += new System.EventHandler(this.newbike1_Load);
+            // 
             // aboutUS1
             // 
             this.aboutUS1.BackColor = System.Drawing.Color.White;
@@ -349,6 +360,7 @@ namespace Modern_Login
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1093, 615);
+            this.Controls.Add(this.newbike1);
             this.Controls.Add(this.aboutUS1);
             this.Controls.Add(this.CN);
             this.Controls.Add(this.panel1);
@@ -390,5 +402,6 @@ namespace Modern_Login
         private System.Windows.Forms.Button NewBikeBTN;
         private Contactus CN;
         private AboutUS aboutUS1;
+        private Newbike newbike1;
     }
 }
