@@ -13,7 +13,7 @@ namespace Modern_Login
     public partial class Newbike : UserControl
     {
         Panel[] p = new Panel[8];
-        public CheckBox[] cb = new CheckBox[8];
+        CheckBox[] cb = new CheckBox[8];
         int t = 0;
         public Newbike()
         {
