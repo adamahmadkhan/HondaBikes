@@ -28,7 +28,7 @@ namespace Modern_Login
 
         private void ToserverBtn_Click(object sender, EventArgs e)
         {
-
+            CartStoring.SendToDatabase();
         }
     }
 }
