@@ -1,5 +1,4 @@
-﻿
-namespace Modern_Login
+﻿namespace Modern_Login
 {
     partial class TotalCart
     {
@@ -29,64 +28,71 @@ namespace Modern_Login
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.UpdateCart = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // iconPictureBox1
             // 
-            this.panel1.Location = new System.Drawing.Point(25, 32);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(142, 282);
-            this.panel1.TabIndex = 0;
+            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Upload;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 41;
+            this.iconPictureBox1.Location = new System.Drawing.Point(292, 29);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(42, 41);
+            this.iconPictureBox1.TabIndex = 8;
+            this.iconPictureBox1.TabStop = false;
             // 
-            // panel2
+            // UpdateCart
             // 
-            this.panel2.Location = new System.Drawing.Point(214, 32);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(142, 282);
-            this.panel2.TabIndex = 1;
+            this.UpdateCart.BackColor = System.Drawing.Color.Red;
+            this.UpdateCart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UpdateCart.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.UpdateCart.FlatAppearance.BorderSize = 0;
+            this.UpdateCart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.UpdateCart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UpdateCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateCart.Location = new System.Drawing.Point(330, 29);
+            this.UpdateCart.Margin = new System.Windows.Forms.Padding(4);
+            this.UpdateCart.Name = "UpdateCart";
+            this.UpdateCart.Size = new System.Drawing.Size(114, 41);
+            this.UpdateCart.TabIndex = 7;
+            this.UpdateCart.Text = "UpdateCart";
+            this.UpdateCart.UseVisualStyleBackColor = false;
             // 
-            // panel3
+            // flowLayoutPanel1
             // 
-            this.panel3.Location = new System.Drawing.Point(406, 32);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(142, 282);
-            this.panel3.TabIndex = 1;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(610, 67);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(22, 77);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(719, 363);
+            this.flowLayoutPanel1.TabIndex = 9;
             // 
             // TotalCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.iconPictureBox1);
+            this.Controls.Add(this.UpdateCart);
             this.Name = "TotalCart";
-            this.Size = new System.Drawing.Size(754, 426);
+            this.Size = new System.Drawing.Size(770, 506);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.Button UpdateCart;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

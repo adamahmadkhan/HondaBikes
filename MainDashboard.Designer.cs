@@ -327,6 +327,7 @@ namespace Modern_Login
             // 
             // newbike1
             // 
+            this.newbike1.AutoScroll = true;
             this.newbike1.Location = new System.Drawing.Point(185, 0);
             this.newbike1.Name = "newbike1";
             this.newbike1.Size = new System.Drawing.Size(908, 615);

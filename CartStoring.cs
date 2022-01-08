@@ -13,6 +13,7 @@ namespace Modern_Login
     class CartStoring
     {
        public static List<Panel> cart = new List<Panel>();
+       public static int x=0;
     }
 
 }
