@@ -536,9 +536,6 @@ namespace Modern_Login
         public System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.CheckBox checkBox0;
-        public System.Windows.Forms.CheckBox checkBox1;
-        public System.Windows.Forms.CheckBox checkBox2;
-        public System.Windows.Forms.CheckBox checkBox3;
         public System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.CheckBox checkBox4;
         public System.Windows.Forms.Label label5;
@@ -557,5 +554,8 @@ namespace Modern_Login
         public System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button UpdateCart;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        public System.Windows.Forms.CheckBox checkBox1;
+        public System.Windows.Forms.CheckBox checkBox2;
+        public System.Windows.Forms.CheckBox checkBox3;
     }
 }

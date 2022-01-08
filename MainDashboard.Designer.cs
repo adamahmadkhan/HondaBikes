@@ -320,26 +320,29 @@ namespace Modern_Login
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(0, 15);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(152, 101);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // totalCart1
             // 
             this.totalCart1.AutoScroll = true;
-            this.totalCart1.BackColor = System.Drawing.Color.Silver;
-            this.totalCart1.Location = new System.Drawing.Point(212, 0);
+            this.totalCart1.BackColor = System.Drawing.SystemColors.Control;
+            this.totalCart1.Location = new System.Drawing.Point(185, 0);
             this.totalCart1.Name = "totalCart1";
-            this.totalCart1.Size = new System.Drawing.Size(881, 603);
+            this.totalCart1.Size = new System.Drawing.Size(908, 615);
             this.totalCart1.TabIndex = 4;
             this.totalCart1.Visible = false;
             // 
             // newbike1
             // 
             this.newbike1.AutoScroll = true;
+            this.newbike1.BackColor = System.Drawing.SystemColors.Control;
             this.newbike1.Location = new System.Drawing.Point(185, 0);
             this.newbike1.Name = "newbike1";
             this.newbike1.Size = new System.Drawing.Size(908, 615);

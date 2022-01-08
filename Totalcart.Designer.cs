@@ -42,7 +42,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 41;
-            this.iconPictureBox1.Location = new System.Drawing.Point(292, 29);
+            this.iconPictureBox1.Location = new System.Drawing.Point(385, 28);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(42, 41);
             this.iconPictureBox1.TabIndex = 8;
@@ -57,7 +57,7 @@
             this.UpdateCart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.UpdateCart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.UpdateCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpdateCart.Location = new System.Drawing.Point(330, 29);
+            this.UpdateCart.Location = new System.Drawing.Point(423, 28);
             this.UpdateCart.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateCart.Name = "UpdateCart";
             this.UpdateCart.Size = new System.Drawing.Size(114, 41);
@@ -70,7 +70,7 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 76);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 110);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(851, 481);
             this.flowLayoutPanel1.TabIndex = 9;
@@ -94,6 +94,6 @@
 
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Button UpdateCart;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
