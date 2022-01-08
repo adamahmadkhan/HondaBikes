@@ -151,12 +151,12 @@ namespace Modern_Login
             }
             if (Option.Text == "Classic")
             {
-                for (int i = 1; i < 5; i++)
+                for (int i = 0; i < 5; i++)
                     OneBikePanel[i].Show();
             }
             if (Option.Text == "Scooter")
             {
-                for (int i = 7; i < 10; i++)
+                for (int i = 8; i < 10; i++)
                     OneBikePanel[i].Show();
             }
         }
