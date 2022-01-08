@@ -14,6 +14,7 @@ namespace Modern_Login
         [STAThread]
         static void Main()
         {
+            DB.DbConnection.initConnection();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginPage());
