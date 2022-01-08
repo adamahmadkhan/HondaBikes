@@ -39,7 +39,7 @@ namespace Modern_Login
             this.panel1 = new System.Windows.Forms.Panel();
             this.bike1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.lprice1 = new System.Windows.Forms.Label();
+            this.price1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bike2 = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@ namespace Modern_Login
             this.panel6 = new System.Windows.Forms.Panel();
             this.bike6 = new System.Windows.Forms.Label();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.price6 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.bike7 = new System.Windows.Forms.Label();
@@ -72,14 +72,14 @@ namespace Modern_Login
             this.price7 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.Bike8 = new System.Windows.Forms.Label();
+            this.bikes8 = new System.Windows.Forms.Label();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.price8 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.bikes9 = new System.Windows.Forms.Label();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.bike9 = new System.Windows.Forms.Label();
+            this.price9 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.UpdateCart = new System.Windows.Forms.Button();
@@ -189,7 +189,7 @@ namespace Modern_Login
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.bike1);
             this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.lprice1);
+            this.panel1.Controls.Add(this.price1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(209, 3);
             this.panel1.Name = "panel1";
@@ -217,15 +217,15 @@ namespace Modern_Login
             this.checkBox1.Text = "Buy";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // lprice1
+            // price1
             // 
-            this.lprice1.AutoSize = true;
-            this.lprice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lprice1.Location = new System.Drawing.Point(100, 241);
-            this.lprice1.Name = "lprice1";
-            this.lprice1.Size = new System.Drawing.Size(91, 29);
-            this.lprice1.TabIndex = 1;
-            this.lprice1.Text = "101500";
+            this.price1.AutoSize = true;
+            this.price1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price1.Location = new System.Drawing.Point(100, 241);
+            this.price1.Name = "price1";
+            this.price1.Size = new System.Drawing.Size(91, 29);
+            this.price1.TabIndex = 1;
+            this.price1.Text = "101500";
             // 
             // pictureBox1
             // 
@@ -457,7 +457,7 @@ namespace Modern_Login
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.bike6);
             this.panel6.Controls.Add(this.checkBox6);
-            this.panel6.Controls.Add(this.label7);
+            this.panel6.Controls.Add(this.price6);
             this.panel6.Controls.Add(this.pictureBox7);
             this.panel6.Location = new System.Drawing.Point(415, 305);
             this.panel6.Name = "panel6";
@@ -485,15 +485,15 @@ namespace Modern_Login
             this.checkBox6.Text = "Buy";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // price6
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(100, 241);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 29);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "273500";
+            this.price6.AutoSize = true;
+            this.price6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price6.Location = new System.Drawing.Point(100, 241);
+            this.price6.Name = "price6";
+            this.price6.Size = new System.Drawing.Size(91, 29);
+            this.price6.TabIndex = 1;
+            this.price6.Text = "273500";
             // 
             // pictureBox7
             // 
@@ -562,7 +562,7 @@ namespace Modern_Login
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.Bike8);
+            this.panel8.Controls.Add(this.bikes8);
             this.panel8.Controls.Add(this.checkBox8);
             this.panel8.Controls.Add(this.price8);
             this.panel8.Controls.Add(this.pictureBox9);
@@ -572,15 +572,16 @@ namespace Modern_Login
             this.panel8.TabIndex = 8;
             this.panel8.Visible = false;
             // 
-            // Bike8
+            // bikes8
             // 
-            this.Bike8.AutoSize = true;
-            this.Bike8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bike8.Location = new System.Drawing.Point(15, 53);
-            this.Bike8.Name = "Bike8";
-            this.Bike8.Size = new System.Drawing.Size(49, 25);
-            this.Bike8.TabIndex = 10;
-            this.Bike8.Text = "Elite";
+            this.bikes8.AutoSize = true;
+            this.bikes8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bikes8.Location = new System.Drawing.Point(15, 53);
+            this.bikes8.Name = "bikes8";
+            this.bikes8.Size = new System.Drawing.Size(49, 25);
+            this.bikes8.TabIndex = 10;
+            this.bikes8.Text = "Elite";
+            this.bikes8.Click += new System.EventHandler(this.bikes8_Click);
             // 
             // checkBox8
             // 
@@ -615,9 +616,9 @@ namespace Modern_Login
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.label1);
+            this.panel9.Controls.Add(this.bikes9);
             this.panel9.Controls.Add(this.checkBox9);
-            this.panel9.Controls.Add(this.bike9);
+            this.panel9.Controls.Add(this.price9);
             this.panel9.Controls.Add(this.pictureBox10);
             this.panel9.Location = new System.Drawing.Point(209, 607);
             this.panel9.Name = "panel9";
@@ -626,15 +627,16 @@ namespace Modern_Login
             this.panel9.Visible = false;
             this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
-            // label1
+            // bikes9
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 25);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "U-Go";
+            this.bikes9.AutoSize = true;
+            this.bikes9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bikes9.Location = new System.Drawing.Point(15, 53);
+            this.bikes9.Name = "bikes9";
+            this.bikes9.Size = new System.Drawing.Size(59, 25);
+            this.bikes9.TabIndex = 10;
+            this.bikes9.Text = "U-Go";
+            this.bikes9.Click += new System.EventHandler(this.bikes9_Click);
             // 
             // checkBox9
             // 
@@ -646,15 +648,15 @@ namespace Modern_Login
             this.checkBox9.Text = "Buy";
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
-            // bike9
+            // price9
             // 
-            this.bike9.AutoSize = true;
-            this.bike9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bike9.Location = new System.Drawing.Point(100, 241);
-            this.bike9.Name = "bike9";
-            this.bike9.Size = new System.Drawing.Size(78, 29);
-            this.bike9.TabIndex = 1;
-            this.bike9.Text = "67000";
+            this.price9.AutoSize = true;
+            this.price9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price9.Location = new System.Drawing.Point(100, 241);
+            this.price9.Name = "price9";
+            this.price9.Size = new System.Drawing.Size(78, 29);
+            this.price9.TabIndex = 1;
+            this.price9.Text = "80000";
             // 
             // pictureBox10
             // 
@@ -777,7 +779,7 @@ namespace Modern_Login
 
         public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         public System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.Label lprice1;
+        public System.Windows.Forms.Label price1;
         public System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Label price2;
         public System.Windows.Forms.PictureBox pictureBox1;
@@ -800,7 +802,7 @@ namespace Modern_Login
         public System.Windows.Forms.PictureBox pictureBox6;
         public System.Windows.Forms.Panel panel6;
         public System.Windows.Forms.CheckBox checkBox6;
-        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label price6;
         public System.Windows.Forms.PictureBox pictureBox7;
         public System.Windows.Forms.Panel panel7;
         public System.Windows.Forms.CheckBox checkBox7;
@@ -820,14 +822,14 @@ namespace Modern_Login
         private System.Windows.Forms.Label bike6;
         private System.Windows.Forms.Label bike7;
         public System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label Bike8;
+        private System.Windows.Forms.Label bikes8;
         public System.Windows.Forms.CheckBox checkBox8;
         public System.Windows.Forms.Label price8;
         public System.Windows.Forms.PictureBox pictureBox9;
         public System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label bikes9;
         public System.Windows.Forms.CheckBox checkBox9;
-        public System.Windows.Forms.Label bike9;
+        public System.Windows.Forms.Label price9;
         public System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.ComboBox Option;
     }
