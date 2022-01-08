@@ -103,6 +103,7 @@
     <Compile Include="Component1.Designer.cs">
       <DependentUpon>Component1.cs</DependentUpon>
     </Compile>
+    <Compile Include="DbMethods\FetchUser.cs" />
     <Compile Include="DB\Dbconnection.cs" />
     <Compile Include="DB\Credentials.cs" />
     <Compile Include="MainDashboard.cs">

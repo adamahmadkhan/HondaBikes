@@ -68,7 +68,7 @@ namespace Modern_Login
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(61, 149);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 33);
+            this.label1.Size = new System.Drawing.Size(212, 43);
             this.label1.TabIndex = 9;
             this.label1.Text = "Login Page";
             // 
@@ -93,7 +93,7 @@ namespace Modern_Login
             this.UserNameBox.ForeColor = System.Drawing.Color.Silver;
             this.UserNameBox.Location = new System.Drawing.Point(53, 217);
             this.UserNameBox.Name = "UserNameBox";
-            this.UserNameBox.Size = new System.Drawing.Size(209, 27);
+            this.UserNameBox.Size = new System.Drawing.Size(209, 33);
             this.UserNameBox.TabIndex = 1;
             this.UserNameBox.Text = "UserName";
             this.UserNameBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -113,7 +113,7 @@ namespace Modern_Login
             this.PasswordBox.ForeColor = System.Drawing.Color.Silver;
             this.PasswordBox.Location = new System.Drawing.Point(53, 306);
             this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.Size = new System.Drawing.Size(209, 27);
+            this.PasswordBox.Size = new System.Drawing.Size(209, 33);
             this.PasswordBox.TabIndex = 3;
             this.PasswordBox.UseSystemPasswordChar = true;
             // 
@@ -174,7 +174,7 @@ namespace Modern_Login
             this.ExitLabel.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitLabel.Location = new System.Drawing.Point(108, 406);
             this.ExitLabel.Name = "ExitLabel";
-            this.ExitLabel.Size = new System.Drawing.Size(59, 27);
+            this.ExitLabel.Size = new System.Drawing.Size(77, 33);
             this.ExitLabel.TabIndex = 8;
             this.ExitLabel.Text = "Exit";
             this.ExitLabel.Click += new System.EventHandler(this.label1_Click);
@@ -185,7 +185,7 @@ namespace Modern_Login
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(50, 451);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 15);
+            this.label2.Size = new System.Drawing.Size(144, 18);
             this.label2.TabIndex = 9;
             this.label2.Text = "Create New Account";
             // 
@@ -197,7 +197,7 @@ namespace Modern_Login
             this.label3.ForeColor = System.Drawing.Color.DarkBlue;
             this.label3.Location = new System.Drawing.Point(167, 451);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 15);
+            this.label3.Size = new System.Drawing.Size(40, 18);
             this.label3.TabIndex = 10;
             this.label3.Text = "Here";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -237,7 +237,6 @@ namespace Modern_Login
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox UserNameBox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox PasswordBox;
         private System.Windows.Forms.Panel panel3;
@@ -249,6 +248,7 @@ namespace Modern_Login
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        public System.Windows.Forms.TextBox UserNameBox;
     }
 }
 

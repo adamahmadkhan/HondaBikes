@@ -5,7 +5,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Modern_Login
-{
+{ 
+    public struct User
+    {
+        public string Name { get; set; }
+        public string Password { get; set; }
+    }
     static class Program
     {
         /// <summary>

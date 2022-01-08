@@ -20,13 +20,29 @@ namespace Modern_Login
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MainDashboard MB = new MainDashboard();
-            MB.Show();
+            User user = new User();
+            user = DbMethods.FetchUser.login();
+            if (UserNameBox.Text == user.Name)
+            {
+                if (PasswordBox.Text == user.Password)
+                {
+                    MainDashboard MB = new MainDashboard();
+                    MB.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect Password");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Credentials");
+            }
+           
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
