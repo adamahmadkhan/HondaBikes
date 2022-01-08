@@ -13,7 +13,7 @@ namespace Modern_Login
     public partial class Newbike : UserControl
     {
         Panel[] p = new Panel[8];
-        CheckBox[] cb = new CheckBox[8];
+        public CheckBox[] cb = new CheckBox[8];
         int t = 0;
         public Newbike()
         {
@@ -59,6 +59,7 @@ namespace Modern_Login
                 {
                     t = t + 1;
                     CartStoring.x++;
+                    cb[i].Hide();
                     CartStoring.cart.Add(p[i]);
                 }
             }
@@ -77,6 +78,11 @@ namespace Modern_Login
         }
 
         private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
 
         }

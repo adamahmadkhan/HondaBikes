@@ -16,11 +16,12 @@ namespace Modern_Login
         {
             InitializeComponent();
         }
-
         private void UpdateCart_Click(object sender, EventArgs e)
         {
+            
             for (int i = 0; i < CartStoring.x; i++)
             {
+                
                 this.flowLayoutPanel1.Controls.Add(CartStoring.cart[i]);
             }
         }

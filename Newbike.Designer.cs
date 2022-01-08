@@ -248,6 +248,7 @@ namespace Modern_Login
             this.checkBox3.TabIndex = 5;
             this.checkBox3.Text = "Buy";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // label2
             // 
