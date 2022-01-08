@@ -32,48 +32,59 @@ namespace Modern_Login
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Newbike));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel0 = new System.Windows.Forms.Panel();
+            this.bike0 = new System.Windows.Forms.Label();
             this.checkBox0 = new System.Windows.Forms.CheckBox();
             this.price0 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bike1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lprice1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bike2 = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.price2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.bike3 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.price3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.bike4 = new System.Windows.Forms.Label();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.price4 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.bike5 = new System.Windows.Forms.Label();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.price5 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.bike6 = new System.Windows.Forms.Label();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.bike7 = new System.Windows.Forms.Label();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.price7 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.Bike8 = new System.Windows.Forms.Label();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.price8 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.bike9 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.UpdateCart = new System.Windows.Forms.Button();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.bike0 = new System.Windows.Forms.Label();
-            this.bike1 = new System.Windows.Forms.Label();
-            this.bike2 = new System.Windows.Forms.Label();
-            this.bike3 = new System.Windows.Forms.Label();
-            this.bike4 = new System.Windows.Forms.Label();
-            this.bike5 = new System.Windows.Forms.Label();
-            this.bike6 = new System.Windows.Forms.Label();
-            this.bike7 = new System.Windows.Forms.Label();
+            this.Option = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel0.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -91,6 +102,10 @@ namespace Modern_Login
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,9 +121,11 @@ namespace Modern_Login
             this.flowLayoutPanel1.Controls.Add(this.panel5);
             this.flowLayoutPanel1.Controls.Add(this.panel6);
             this.flowLayoutPanel1.Controls.Add(this.panel7);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(29, 100);
+            this.flowLayoutPanel1.Controls.Add(this.panel8);
+            this.flowLayoutPanel1.Controls.Add(this.panel9);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(29, 65);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(850, 477);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(863, 512);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -123,6 +140,18 @@ namespace Modern_Login
             this.panel0.Name = "panel0";
             this.panel0.Size = new System.Drawing.Size(200, 296);
             this.panel0.TabIndex = 3;
+            this.panel0.Visible = false;
+            this.panel0.Paint += new System.Windows.Forms.PaintEventHandler(this.panel0_Paint);
+            // 
+            // bike0
+            // 
+            this.bike0.AutoSize = true;
+            this.bike0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bike0.Location = new System.Drawing.Point(12, 53);
+            this.bike0.Name = "bike0";
+            this.bike0.Size = new System.Drawing.Size(70, 25);
+            this.bike0.TabIndex = 3;
+            this.bike0.Text = "CD-70";
             // 
             // checkBox0
             // 
@@ -164,8 +193,19 @@ namespace Modern_Login
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(209, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 296);
+            this.panel1.Size = new System.Drawing.Size(202, 296);
             this.panel1.TabIndex = 0;
+            this.panel1.Visible = false;
+            // 
+            // bike1
+            // 
+            this.bike1.AutoSize = true;
+            this.bike1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bike1.Location = new System.Drawing.Point(3, 53);
+            this.bike1.Name = "bike1";
+            this.bike1.Size = new System.Drawing.Size(133, 25);
+            this.bike1.TabIndex = 4;
+            this.bike1.Text = "CD-70 Dream";
             // 
             // checkBox1
             // 
@@ -204,10 +244,21 @@ namespace Modern_Login
             this.panel2.Controls.Add(this.checkBox2);
             this.panel2.Controls.Add(this.price2);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(415, 3);
+            this.panel2.Location = new System.Drawing.Point(417, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 296);
             this.panel2.TabIndex = 1;
+            this.panel2.Visible = false;
+            // 
+            // bike2
+            // 
+            this.bike2.AutoSize = true;
+            this.bike2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bike2.Location = new System.Drawing.Point(3, 53);
+            this.bike2.Name = "bike2";
+            this.bike2.Size = new System.Drawing.Size(86, 25);
+            this.bike2.TabIndex = 5;
+            this.bike2.Text = "PRIDOR";
             // 
             // checkBox2
             // 
@@ -246,10 +297,21 @@ namespace Modern_Login
             this.panel3.Controls.Add(this.checkBox3);
             this.panel3.Controls.Add(this.price3);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(621, 3);
+            this.panel3.Location = new System.Drawing.Point(623, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 296);
             this.panel3.TabIndex = 2;
+            this.panel3.Visible = false;
+            // 
+            // bike3
+            // 
+            this.bike3.AutoSize = true;
+            this.bike3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bike3.Location = new System.Drawing.Point(15, 53);
+            this.bike3.Name = "bike3";
+            this.bike3.Size = new System.Drawing.Size(81, 25);
+            this.bike3.TabIndex = 6;
+            this.bike3.Text = "CD-125";
             // 
             // checkBox3
             // 
@@ -293,6 +355,17 @@ namespace Modern_Login
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 296);
             this.panel4.TabIndex = 7;
+            this.panel4.Visible = false;
+            // 
+            // bike4
+            // 
+            this.bike4.AutoSize = true;
+            this.bike4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bike4.Location = new System.Drawing.Point(12, 53);
+            this.bike4.Name = "bike4";
+            this.bike4.Size = new System.Drawing.Size(95, 25);
+            this.bike4.TabIndex = 7;
+            this.bike4.Text = "CD125-S";
             // 
             // checkBox4
             // 
@@ -335,6 +408,18 @@ namespace Modern_Login
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 296);
             this.panel5.TabIndex = 4;
+            this.panel5.Visible = false;
+            // 
+            // bike5
+            // 
+            this.bike5.AutoSize = true;
+            this.bike5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bike5.Location = new System.Drawing.Point(10, 53);
+            this.bike5.Name = "bike5";
+            this.bike5.Size = new System.Drawing.Size(85, 25);
+            this.bike5.TabIndex = 8;
+            this.bike5.Text = "CB125F";
+            this.bike5.Click += new System.EventHandler(this.bike5_Click);
             // 
             // checkBox5
             // 
@@ -378,6 +463,17 @@ namespace Modern_Login
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 296);
             this.panel6.TabIndex = 5;
+            this.panel6.Visible = false;
+            // 
+            // bike6
+            // 
+            this.bike6.AutoSize = true;
+            this.bike6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bike6.Location = new System.Drawing.Point(3, 53);
+            this.bike6.Name = "bike6";
+            this.bike6.Size = new System.Drawing.Size(85, 25);
+            this.bike6.TabIndex = 9;
+            this.bike6.Text = "CB150F";
             // 
             // checkBox6
             // 
@@ -414,12 +510,23 @@ namespace Modern_Login
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.bike7);
             this.panel7.Controls.Add(this.checkBox7);
-            this.panel7.Controls.Add(this.label8);
+            this.panel7.Controls.Add(this.price7);
             this.panel7.Controls.Add(this.pictureBox8);
             this.panel7.Location = new System.Drawing.Point(621, 305);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 296);
             this.panel7.TabIndex = 6;
+            this.panel7.Visible = false;
+            // 
+            // bike7
+            // 
+            this.bike7.AutoSize = true;
+            this.bike7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bike7.Location = new System.Drawing.Point(15, 53);
+            this.bike7.Name = "bike7";
+            this.bike7.Size = new System.Drawing.Size(73, 25);
+            this.bike7.TabIndex = 10;
+            this.bike7.Text = "CB200";
             // 
             // checkBox7
             // 
@@ -432,15 +539,15 @@ namespace Modern_Login
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
-            // label8
+            // price7
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(100, 241);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 29);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "300000";
+            this.price7.AutoSize = true;
+            this.price7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price7.Location = new System.Drawing.Point(100, 241);
+            this.price7.Name = "price7";
+            this.price7.Size = new System.Drawing.Size(91, 29);
+            this.price7.TabIndex = 1;
+            this.price7.Text = "300000";
             // 
             // pictureBox8
             // 
@@ -452,10 +559,117 @@ namespace Modern_Login
             this.pictureBox8.TabIndex = 0;
             this.pictureBox8.TabStop = false;
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Controls.Add(this.Bike8);
+            this.panel8.Controls.Add(this.checkBox8);
+            this.panel8.Controls.Add(this.price8);
+            this.panel8.Controls.Add(this.pictureBox9);
+            this.panel8.Location = new System.Drawing.Point(3, 607);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(200, 296);
+            this.panel8.TabIndex = 8;
+            this.panel8.Visible = false;
+            // 
+            // Bike8
+            // 
+            this.Bike8.AutoSize = true;
+            this.Bike8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bike8.Location = new System.Drawing.Point(15, 53);
+            this.Bike8.Name = "Bike8";
+            this.Bike8.Size = new System.Drawing.Size(49, 25);
+            this.Bike8.TabIndex = 10;
+            this.Bike8.Text = "Elite";
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(123, 13);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(54, 21);
+            this.checkBox8.TabIndex = 5;
+            this.checkBox8.Text = "Buy";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // price8
+            // 
+            this.price8.AutoSize = true;
+            this.price8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price8.Location = new System.Drawing.Point(100, 241);
+            this.price8.Name = "price8";
+            this.price8.Size = new System.Drawing.Size(78, 29);
+            this.price8.TabIndex = 1;
+            this.price8.Text = "67000";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(3, 81);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(194, 141);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Controls.Add(this.label1);
+            this.panel9.Controls.Add(this.checkBox9);
+            this.panel9.Controls.Add(this.bike9);
+            this.panel9.Controls.Add(this.pictureBox10);
+            this.panel9.Location = new System.Drawing.Point(209, 607);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(200, 296);
+            this.panel9.TabIndex = 9;
+            this.panel9.Visible = false;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 25);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "U-Go";
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(123, 13);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(54, 21);
+            this.checkBox9.TabIndex = 5;
+            this.checkBox9.Text = "Buy";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // bike9
+            // 
+            this.bike9.AutoSize = true;
+            this.bike9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bike9.Location = new System.Drawing.Point(100, 241);
+            this.bike9.Name = "bike9";
+            this.bike9.Size = new System.Drawing.Size(78, 29);
+            this.bike9.TabIndex = 1;
+            this.bike9.Text = "67000";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(3, 81);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(194, 141);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 0;
+            this.pictureBox10.TabStop = false;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(250, 64);
+            this.label4.Location = new System.Drawing.Point(250, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 17);
             this.label4.TabIndex = 2;
@@ -471,7 +685,7 @@ namespace Modern_Login
             this.UpdateCart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.UpdateCart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.UpdateCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpdateCart.Location = new System.Drawing.Point(409, 52);
+            this.UpdateCart.Location = new System.Drawing.Point(409, 17);
             this.UpdateCart.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateCart.Name = "UpdateCart";
             this.UpdateCart.Size = new System.Drawing.Size(100, 41);
@@ -488,104 +702,40 @@ namespace Modern_Login
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 41;
-            this.iconPictureBox1.Location = new System.Drawing.Point(372, 52);
+            this.iconPictureBox1.Location = new System.Drawing.Point(372, 17);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(42, 41);
             this.iconPictureBox1.TabIndex = 6;
             this.iconPictureBox1.TabStop = false;
             // 
-            // bike0
+            // Option
             // 
-            this.bike0.AutoSize = true;
-            this.bike0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bike0.Location = new System.Drawing.Point(12, 53);
-            this.bike0.Name = "bike0";
-            this.bike0.Size = new System.Drawing.Size(70, 25);
-            this.bike0.TabIndex = 3;
-            this.bike0.Text = "CD-70";
-            // 
-            // bike1
-            // 
-            this.bike1.AutoSize = true;
-            this.bike1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bike1.Location = new System.Drawing.Point(3, 53);
-            this.bike1.Name = "bike1";
-            this.bike1.Size = new System.Drawing.Size(133, 25);
-            this.bike1.TabIndex = 4;
-            this.bike1.Text = "CD-70 Dream";
-            // 
-            // bike2
-            // 
-            this.bike2.AutoSize = true;
-            this.bike2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bike2.Location = new System.Drawing.Point(3, 53);
-            this.bike2.Name = "bike2";
-            this.bike2.Size = new System.Drawing.Size(86, 25);
-            this.bike2.TabIndex = 5;
-            this.bike2.Text = "PRIDOR";
-            // 
-            // bike3
-            // 
-            this.bike3.AutoSize = true;
-            this.bike3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bike3.Location = new System.Drawing.Point(15, 53);
-            this.bike3.Name = "bike3";
-            this.bike3.Size = new System.Drawing.Size(81, 25);
-            this.bike3.TabIndex = 6;
-            this.bike3.Text = "CD-125";
-            // 
-            // bike4
-            // 
-            this.bike4.AutoSize = true;
-            this.bike4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bike4.Location = new System.Drawing.Point(12, 53);
-            this.bike4.Name = "bike4";
-            this.bike4.Size = new System.Drawing.Size(95, 25);
-            this.bike4.TabIndex = 7;
-            this.bike4.Text = "CD125-S";
-            // 
-            // bike5
-            // 
-            this.bike5.AutoSize = true;
-            this.bike5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bike5.Location = new System.Drawing.Point(10, 53);
-            this.bike5.Name = "bike5";
-            this.bike5.Size = new System.Drawing.Size(85, 25);
-            this.bike5.TabIndex = 8;
-            this.bike5.Text = "CB125F";
-            this.bike5.Click += new System.EventHandler(this.bike5_Click);
-            // 
-            // bike6
-            // 
-            this.bike6.AutoSize = true;
-            this.bike6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bike6.Location = new System.Drawing.Point(3, 53);
-            this.bike6.Name = "bike6";
-            this.bike6.Size = new System.Drawing.Size(85, 25);
-            this.bike6.TabIndex = 9;
-            this.bike6.Text = "CB150F";
-            // 
-            // bike7
-            // 
-            this.bike7.AutoSize = true;
-            this.bike7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bike7.Location = new System.Drawing.Point(15, 53);
-            this.bike7.Name = "bike7";
-            this.bike7.Size = new System.Drawing.Size(73, 25);
-            this.bike7.TabIndex = 10;
-            this.bike7.Text = "CB200";
+            this.Option.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Option.FormattingEnabled = true;
+            this.Option.Items.AddRange(new object[] {
+            "ALL",
+            "Classic",
+            "Sports",
+            "Scooter"});
+            this.Option.Location = new System.Drawing.Point(568, 26);
+            this.Option.Name = "Option";
+            this.Option.Size = new System.Drawing.Size(121, 24);
+            this.Option.TabIndex = 7;
+            this.Option.Text = "Choose Type";
+            this.Option.SelectedIndexChanged += new System.EventHandler(this.Option_SelectedIndexChanged);
             // 
             // Newbike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.Controls.Add(this.Option);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.UpdateCart);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Newbike";
-            this.Size = new System.Drawing.Size(933, 580);
+            this.Size = new System.Drawing.Size(933, 593);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel0.ResumeLayout(false);
             this.panel0.PerformLayout();
@@ -611,6 +761,12 @@ namespace Modern_Login
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -648,7 +804,7 @@ namespace Modern_Login
         public System.Windows.Forms.PictureBox pictureBox7;
         public System.Windows.Forms.Panel panel7;
         public System.Windows.Forms.CheckBox checkBox7;
-        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label price7;
         public System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button UpdateCart;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
@@ -663,5 +819,16 @@ namespace Modern_Login
         private System.Windows.Forms.Label bike5;
         private System.Windows.Forms.Label bike6;
         private System.Windows.Forms.Label bike7;
+        public System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label Bike8;
+        public System.Windows.Forms.CheckBox checkBox8;
+        public System.Windows.Forms.Label price8;
+        public System.Windows.Forms.PictureBox pictureBox9;
+        public System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.CheckBox checkBox9;
+        public System.Windows.Forms.Label bike9;
+        public System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.ComboBox Option;
     }
 }
