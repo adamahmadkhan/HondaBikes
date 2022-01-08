@@ -10,18 +10,19 @@ namespace Modern_Login.DbMethods
    
     static class FetchUser
     {
-        public static User login()
+        public static User login(string InputName)
         {
             MySqlConnection conn = DB.DbConnection.initConnection();
-            User user = new User(); 
+            User user = new User();
+            Console.WriteLine(InputName);
             try
             {
                 conn.Open();
 
-                String query = "SELECT * FROM users";
+                String query = $"SELECT * FROM users WHERE name = '{InputName}'";
                 MySqlCommand command = new MySqlCommand(query, conn);
                 MySqlDataReader reader = command.ExecuteReader();
-                Console.WriteLine("Afaq reader" + reader);
+                
                  while (reader.Read())
                  {
                     String name = reader.GetString("name");

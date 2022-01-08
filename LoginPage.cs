@@ -25,7 +25,7 @@ namespace Modern_Login
         private void button1_Click(object sender, EventArgs e)
         {
             User user = new User();
-            user = DbMethods.FetchUser.login();
+            user = DbMethods.FetchUser.login(UserNameBox.Text.ToString());
             if (UserNameBox.Text == user.Name)
             {
                 if (PasswordBox.Text == user.Password)
