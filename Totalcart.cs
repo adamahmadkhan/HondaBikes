@@ -25,5 +25,10 @@ namespace Modern_Login
                 this.flowLayoutPanel1.Controls.Add(CartStoring.cart[i]);
             }
         }
+
+        private void ToserverBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
