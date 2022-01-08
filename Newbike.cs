@@ -52,7 +52,7 @@ namespace Modern_Login
 
         private void UpdateCart_Click(object sender, EventArgs e)
         {
-            CartStoring.cart.Clear();
+            
             for (int i = 0; i < 8; i++)
             {
                 if (cb[i].Checked)

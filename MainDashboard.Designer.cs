@@ -49,6 +49,7 @@ namespace Modern_Login
             this.newbike1 = new Modern_Login.Newbike();
             this.aboutUS1 = new Modern_Login.AboutUS();
             this.CN = new Modern_Login.Contactus();
+            this.totalCart1 = new Modern_Login.TotalCart();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
@@ -133,6 +134,7 @@ namespace Modern_Login
             this.CartBTN.TabIndex = 13;
             this.CartBTN.Text = "Cart";
             this.CartBTN.UseVisualStyleBackColor = false;
+            this.CartBTN.Click += new System.EventHandler(this.CartBTN_Click);
             // 
             // iconPictureBox6
             // 
@@ -354,6 +356,15 @@ namespace Modern_Login
             this.CN.TabIndex = 1;
             this.CN.Visible = false;
             // 
+            // totalCart1
+            // 
+            this.totalCart1.AutoScroll = true;
+            this.totalCart1.Location = new System.Drawing.Point(226, 35);
+            this.totalCart1.Name = "totalCart1";
+            this.totalCart1.Size = new System.Drawing.Size(820, 552);
+            this.totalCart1.TabIndex = 4;
+            this.totalCart1.Visible = false;
+            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -361,6 +372,7 @@ namespace Modern_Login
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1093, 615);
+            this.Controls.Add(this.totalCart1);
             this.Controls.Add(this.newbike1);
             this.Controls.Add(this.aboutUS1);
             this.Controls.Add(this.CN);
@@ -404,5 +416,6 @@ namespace Modern_Login
         private Contactus CN;
         private AboutUS aboutUS1;
         private Newbike newbike1;
+        private TotalCart totalCart1;
     }
 }

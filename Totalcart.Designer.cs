@@ -64,14 +64,15 @@
             this.UpdateCart.TabIndex = 7;
             this.UpdateCart.Text = "UpdateCart";
             this.UpdateCart.UseVisualStyleBackColor = false;
+            this.UpdateCart.Click += new System.EventHandler(this.UpdateCart_Click);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Silver;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(22, 77);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(719, 363);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(765, 404);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
             // TotalCart
@@ -83,7 +84,7 @@
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.UpdateCart);
             this.Name = "TotalCart";
-            this.Size = new System.Drawing.Size(770, 506);
+            this.Size = new System.Drawing.Size(820, 552);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
