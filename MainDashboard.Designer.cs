@@ -46,10 +46,10 @@ namespace Modern_Login
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.ExitDashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.totalCart1 = new Modern_Login.TotalCart();
             this.newbike1 = new Modern_Login.Newbike();
             this.aboutUS1 = new Modern_Login.AboutUS();
             this.CN = new Modern_Login.Contactus();
-            this.totalCart1 = new Modern_Login.TotalCart();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
@@ -327,6 +327,16 @@ namespace Modern_Login
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // totalCart1
+            // 
+            this.totalCart1.AutoScroll = true;
+            this.totalCart1.BackColor = System.Drawing.Color.Silver;
+            this.totalCart1.Location = new System.Drawing.Point(212, 0);
+            this.totalCart1.Name = "totalCart1";
+            this.totalCart1.Size = new System.Drawing.Size(881, 603);
+            this.totalCart1.TabIndex = 4;
+            this.totalCart1.Visible = false;
+            // 
             // newbike1
             // 
             this.newbike1.AutoScroll = true;
@@ -355,15 +365,6 @@ namespace Modern_Login
             this.CN.Size = new System.Drawing.Size(908, 615);
             this.CN.TabIndex = 1;
             this.CN.Visible = false;
-            // 
-            // totalCart1
-            // 
-            this.totalCart1.AutoScroll = true;
-            this.totalCart1.Location = new System.Drawing.Point(226, 35);
-            this.totalCart1.Name = "totalCart1";
-            this.totalCart1.Size = new System.Drawing.Size(820, 552);
-            this.totalCart1.TabIndex = 4;
-            this.totalCart1.Visible = false;
             // 
             // MainDashboard
             // 
