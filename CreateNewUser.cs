@@ -16,6 +16,7 @@ namespace Modern_Login
         {
             InitializeComponent();
         }
+        string user;
 
         private void ExitLabel_Click(object sender, EventArgs e)
         {
@@ -34,10 +35,7 @@ namespace Modern_Login
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (UserNameBox.Text.Contains(" ")) 
-            SpecialChars.Text = "It Cant contains empty spaces";
-            else
-            SpecialChars.Text = "";
+           
         }
 
         private void Reconfirm_TextChanged(object sender, EventArgs e)
