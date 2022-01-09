@@ -57,7 +57,10 @@ namespace Modern_Login
 
         private void label3_Click(object sender, EventArgs e)
         {
-            Process.Start("https://forms.gle/bwSXJzDppJ1btnyY9/");
+            //Process.Start("https://forms.gle/bwSXJzDppJ1btnyY9/");
+
+            CreateNewUser Cnu = new CreateNewUser();
+            Cnu.Show();
         }
     }
 }
