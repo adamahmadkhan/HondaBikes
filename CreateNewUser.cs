@@ -15,9 +15,9 @@ namespace Modern_Login
         public CreateNewUser()
         {
             InitializeComponent();
+            pictureBox1.ImageLocation = @"D:\GIT\FinalHondaBike\Bikes\125-1.jpg";
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
         }
-        string user;
-
         private void ExitLabel_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -60,6 +60,13 @@ namespace Modern_Login
 
         private void SpecialChars_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.ImageLocation = @"D:\GIT\FinalHondaBike\Bikes\125-1.jpg";
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 
         }
     }
