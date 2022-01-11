@@ -45,11 +45,6 @@ namespace Modern_Login
            
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -66,6 +61,34 @@ namespace Modern_Login
         private void iconPictureBox3_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void PasswordBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserNameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserNameBox_Enter(object sender, EventArgs e)
+        {
+            if (UserNameBox.Text == "UserName")
+            {
+                UserNameBox.Text = "";
+                UserNameBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void UserNameBox_Leave(object sender, EventArgs e)
+        {
+            if (UserNameBox.Text == "")
+            {
+                UserNameBox.Text = "UserName";
+                UserNameBox.ForeColor = Color.Silver;
+            }
         }
     }
 }

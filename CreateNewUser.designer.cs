@@ -53,7 +53,6 @@ namespace Modern_Login
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.CheckPassword = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -61,7 +60,6 @@ namespace Modern_Login
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ExitLabel
@@ -195,19 +193,22 @@ namespace Modern_Login
             // Email
             // 
             this.Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Email.ForeColor = System.Drawing.Color.Silver;
-            this.Email.Location = new System.Drawing.Point(50, 248);
+            this.Email.Location = new System.Drawing.Point(48, 248);
             this.Email.Margin = new System.Windows.Forms.Padding(4);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(279, 33);
+            this.Email.Size = new System.Drawing.Size(279, 35);
             this.Email.TabIndex = 18;
             this.Email.Text = "Email";
+            this.Email.TextChanged += new System.EventHandler(this.Email_TextChanged);
+            this.Email.Enter += new System.EventHandler(this.Email_Enter);
+            this.Email.Leave += new System.EventHandler(this.Email_Leave);
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(50, 289);
+            this.panel1.Location = new System.Drawing.Point(50, 284);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(277, 1);
@@ -254,7 +255,6 @@ namespace Modern_Login
             // 
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.iconPictureBox5);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -319,15 +319,17 @@ namespace Modern_Login
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Silver;
-            this.textBox1.Location = new System.Drawing.Point(50, 324);
+            this.textBox1.Location = new System.Drawing.Point(48, 324);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 33);
+            this.textBox1.Size = new System.Drawing.Size(279, 37);
             this.textBox1.TabIndex = 26;
             this.textBox1.Text = "UserName";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // panel6
             // 
@@ -347,15 +349,6 @@ namespace Modern_Login
             this.CheckPassword.Size = new System.Drawing.Size(142, 19);
             this.CheckPassword.TabIndex = 30;
             this.CheckPassword.Text = "Reenter password";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(430, 81);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // CreateNewUser
             // 
@@ -397,7 +390,6 @@ namespace Modern_Login
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,6 +420,5 @@ namespace Modern_Login
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label CheckPassword;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

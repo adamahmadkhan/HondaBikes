@@ -15,8 +15,7 @@ namespace Modern_Login
         public CreateNewUser()
         {
             InitializeComponent();
-            pictureBox1.ImageLocation = @"D:\GIT\FinalHondaBike\Bikes\125-1.jpg";
-            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            
         }
         private void ExitLabel_Click(object sender, EventArgs e)
         {
@@ -65,11 +64,6 @@ namespace Modern_Login
                 
                 DbMethods.FetchUser.CreateUser(Email.Text, textBox1.Text, PasswordBox.Text);
             }
-            
-            
-            
-            
-            
             //type Datasebase code above this line
             this.Close();
         }
@@ -81,9 +75,50 @@ namespace Modern_Login
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            pictureBox1.ImageLocation = @"D:\GIT\FinalHondaBike\Bikes\125-1.jpg";
-            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            
 
+        }
+
+        private void Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Email_Enter(object sender, EventArgs e)
+        {
+            if (Email.Text == "Email")
+            {
+                Email.Text = "";
+                Email.ForeColor = Color.Black;
+            }
+        }
+
+        private void Email_Leave(object sender, EventArgs e)
+        {
+            if (Email.Text == "")
+            {
+                Email.Text = "Email";
+                Email.ForeColor = Color.Silver;
+            }
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text =="UserName")
+            {
+                textBox1.Text = "";
+                textBox1.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "UserName";
+                textBox1.ForeColor = Color.Silver;
+            }
         }
     }
 }

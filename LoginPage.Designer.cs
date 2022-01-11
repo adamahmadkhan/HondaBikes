@@ -57,7 +57,7 @@ namespace Modern_Login
             this.panel1.Controls.Add(this.iconPictureBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 240);
             this.panel1.TabIndex = 0;
@@ -83,7 +83,7 @@ namespace Modern_Login
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 240;
             this.iconPictureBox3.Location = new System.Drawing.Point(71, 0);
-            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(252, 240);
             this.iconPictureBox3.TabIndex = 0;
@@ -93,21 +93,23 @@ namespace Modern_Login
             // UserNameBox
             // 
             this.UserNameBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UserNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameBox.ForeColor = System.Drawing.Color.Silver;
-            this.UserNameBox.Location = new System.Drawing.Point(71, 267);
-            this.UserNameBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UserNameBox.Location = new System.Drawing.Point(69, 266);
+            this.UserNameBox.Margin = new System.Windows.Forms.Padding(4);
             this.UserNameBox.Name = "UserNameBox";
-            this.UserNameBox.Size = new System.Drawing.Size(279, 33);
+            this.UserNameBox.Size = new System.Drawing.Size(279, 34);
             this.UserNameBox.TabIndex = 1;
             this.UserNameBox.Text = "UserName";
-            this.UserNameBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.UserNameBox.TextChanged += new System.EventHandler(this.UserNameBox_TextChanged);
+            this.UserNameBox.Enter += new System.EventHandler(this.UserNameBox_Enter);
+            this.UserNameBox.Leave += new System.EventHandler(this.UserNameBox_Leave);
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Location = new System.Drawing.Point(73, 303);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(277, 1);
             this.panel2.TabIndex = 2;
@@ -118,17 +120,18 @@ namespace Modern_Login
             this.PasswordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordBox.ForeColor = System.Drawing.Color.Silver;
             this.PasswordBox.Location = new System.Drawing.Point(71, 377);
-            this.PasswordBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PasswordBox.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordBox.Name = "PasswordBox";
             this.PasswordBox.Size = new System.Drawing.Size(279, 33);
             this.PasswordBox.TabIndex = 3;
             this.PasswordBox.UseSystemPasswordChar = true;
+            this.PasswordBox.TextChanged += new System.EventHandler(this.PasswordBox_TextChanged);
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Location = new System.Drawing.Point(71, 409);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(277, 1);
             this.panel3.TabIndex = 4;
@@ -142,7 +145,7 @@ namespace Modern_Login
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 38;
             this.iconPictureBox1.Location = new System.Drawing.Point(24, 266);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(41, 38);
             this.iconPictureBox1.TabIndex = 5;
@@ -157,7 +160,7 @@ namespace Modern_Login
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 39;
             this.iconPictureBox2.Location = new System.Drawing.Point(23, 370);
-            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(40, 39);
             this.iconPictureBox2.TabIndex = 6;
@@ -170,7 +173,7 @@ namespace Modern_Login
             this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LoginButton.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginButton.Location = new System.Drawing.Point(89, 438);
-            this.LoginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(4);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(179, 58);
             this.LoginButton.TabIndex = 7;
@@ -208,7 +211,7 @@ namespace Modern_Login
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label3.Location = new System.Drawing.Point(223, 555);
+            this.label3.Location = new System.Drawing.Point(209, 555);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 18);
@@ -234,7 +237,7 @@ namespace Modern_Login
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
