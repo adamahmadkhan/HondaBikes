@@ -46,9 +46,25 @@ namespace Modern_Login
                 CheckPassword.Text = "Password not match";
         }
 
+        private bool ConfirmPassword()
+        {
+            if(PasswordBox.Text == Reconfirm.Text)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            
+            if(ConfirmPassword() == true)
+            {
+                
+                DbMethods.FetchUser.CreateUser(Email.Text, textBox1.Text, PasswordBox.Text);
+            }
             
             
             

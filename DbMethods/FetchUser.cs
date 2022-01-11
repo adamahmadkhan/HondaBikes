@@ -42,5 +42,31 @@ namespace Modern_Login.DbMethods
                 return user;
             
         }
+
+        public static User CreateUser(string email,string username, string password)
+        {
+            MySqlConnection conn = DB.DbConnection.initConnection();
+            User user = new User();
+            //Console.WriteLine(InputName);
+            try
+            {
+                conn.Open();
+
+                String query = $"INSERT INTO users (email,name,password) VALUES ('{email}','{username}','{password}')";
+                MySqlCommand command = new MySqlCommand(query, conn);
+                MySqlDataReader reader = command.ExecuteReader();
+
+               user.Email = email;
+               user.Name = username;
+               user.Password = password;
+            return user;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return user ;
+
+        }
     }
 }
