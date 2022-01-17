@@ -97,6 +97,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CartStoring.cs" />
+    <Compile Include="comingSoon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="comingSoon.Designer.cs">
+      <DependentUpon>comingSoon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     <Compile Include="Totalcart.Designer.cs">
       <DependentUpon>Totalcart.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="comingSoon.resx">
+      <DependentUpon>comingSoon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateNewUser.resx">
       <DependentUpon>CreateNewUser.cs</DependentUpon>
     </EmbeddedResource>

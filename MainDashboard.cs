@@ -32,6 +32,7 @@ namespace Modern_Login
             aboutUS1.Hide();
             newbike1.Hide();
             totalCart1.Hide();
+            comingSoon1.Hide();
             CN.Show();
         }
 
@@ -40,6 +41,7 @@ namespace Modern_Login
             CN.Hide();
             newbike1.Hide();
             totalCart1.Hide();
+            comingSoon1.Hide();
             aboutUS1.Show();
         }
 
@@ -48,6 +50,7 @@ namespace Modern_Login
             CN.Hide();
             aboutUS1.Hide();
             totalCart1.Hide();
+            comingSoon1.Hide();
             newbike1.Show();
 
         }
@@ -62,6 +65,7 @@ namespace Modern_Login
             CN.Hide();
             aboutUS1.Hide();
             newbike1.Hide();
+            comingSoon1.Hide();
             totalCart1.Show();
         }
 
@@ -77,6 +81,24 @@ namespace Modern_Login
             MainDashboard restart = new MainDashboard();
             restart.Show();
             this.Dispose(false);
+        }
+
+        private void FuelsBtN_Click(object sender, EventArgs e)
+        {
+            CN.Hide();
+            aboutUS1.Hide();
+            newbike1.Hide();
+            totalCart1.Hide();
+            comingSoon1.Show();
+        }
+
+        private void NeedRepairBtn_Click(object sender, EventArgs e)
+        {
+            CN.Hide();
+            aboutUS1.Hide();
+            newbike1.Hide();
+            totalCart1.Hide();
+            comingSoon1.Show();
         }
     }
 }

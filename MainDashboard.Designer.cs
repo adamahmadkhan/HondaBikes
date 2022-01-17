@@ -50,6 +50,7 @@ namespace Modern_Login
             this.newbike1 = new Modern_Login.Newbike();
             this.aboutUS1 = new Modern_Login.AboutUS();
             this.CN = new Modern_Login.Contactus();
+            this.comingSoon1 = new Modern_Login.comingSoon();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
@@ -117,6 +118,7 @@ namespace Modern_Login
             this.NeedRepairBtn.TabIndex = 6;
             this.NeedRepairBtn.Text = "Repair";
             this.NeedRepairBtn.UseVisualStyleBackColor = false;
+            this.NeedRepairBtn.Click += new System.EventHandler(this.NeedRepairBtn_Click);
             // 
             // CartBTN
             // 
@@ -227,6 +229,7 @@ namespace Modern_Login
             this.FuelsBtN.TabIndex = 7;
             this.FuelsBtN.Text = "Fuels";
             this.FuelsBtN.UseVisualStyleBackColor = false;
+            this.FuelsBtN.Click += new System.EventHandler(this.FuelsBtN_Click);
             // 
             // ContactUSBTN
             // 
@@ -369,6 +372,16 @@ namespace Modern_Login
             this.CN.TabIndex = 1;
             this.CN.Visible = false;
             // 
+            // comingSoon1
+            // 
+            this.comingSoon1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("comingSoon1.BackgroundImage")));
+            this.comingSoon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.comingSoon1.Location = new System.Drawing.Point(185, 0);
+            this.comingSoon1.Name = "comingSoon1";
+            this.comingSoon1.Size = new System.Drawing.Size(915, 615);
+            this.comingSoon1.TabIndex = 5;
+            this.comingSoon1.Visible = false;
+            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -376,6 +389,7 @@ namespace Modern_Login
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1093, 615);
+            this.Controls.Add(this.comingSoon1);
             this.Controls.Add(this.totalCart1);
             this.Controls.Add(this.newbike1);
             this.Controls.Add(this.aboutUS1);
@@ -421,5 +435,6 @@ namespace Modern_Login
         private AboutUS aboutUS1;
         private Newbike newbike1;
         private TotalCart totalCart1;
+        private comingSoon comingSoon1;
     }
 }
