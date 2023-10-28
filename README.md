@@ -3,8 +3,7 @@
 
 ## Screenshot
 
-<br> <br>
-
+<br>
 Sign Up Page <br>
 
 ![Screenshot (138)](https://github.com/adamahmadkhan/HondaBikes/assets/74861984/e1add235-a4f8-433c-ac03-f745ca6cb0b8)
